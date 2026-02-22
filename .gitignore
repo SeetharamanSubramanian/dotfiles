@@ -1,0 +1,7 @@
+# Environment files (keep .env.template)
+.env
+**/.env
+!**/.env.template
+
+# Fish generated files
+*.fish

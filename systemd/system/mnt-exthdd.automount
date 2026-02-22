@@ -1,0 +1,8 @@
+[Unit]
+Description=Automount /mnt/exthdd
+
+[Automount]
+Where=/mnt/exthdd
+
+[Install]
+WantedBy=multi-user.target

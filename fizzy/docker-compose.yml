@@ -1,0 +1,31 @@
+services:
+  web:
+    container_name: fizzy
+    image: ghcr.io/basecamp/fizzy:main
+    restart: unless-stopped
+    ports:
+      - "3000:80"
+      - "3443:443"
+    environment:
+      - SECRET_KEY_BASE=${SECRET_KEY_BASE}
+      - TLS_DOMAIN=${TLS_DOMAIN}
+      - BASE_URL=${BASE_URL}
+      - MAILER_FROM_ADDRESS=${MAILER_FROM_ADDRESS}
+      - SMTP_ADDRESS=${SMTP_ADDRESS}
+      - SMTP_PORT=${SMTP_PORT}
+      - SMTP_USERNAME=${SMTP_USERNAME}
+      - SMTP_PASSWORD=${SMTP_PASSWORD}
+      - VAPID_PRIVATE_KEY=${VAPID_PRIVATE_KEY}
+      - VAPID_PUBLIC_KEY=${VAPID_PUBLIC_KEY}
+      - DISABLE_SSL=${DISABLE_SSL:-true}
+    volumes:
+      - fizzy:/rails/storage
+    networks:
+      - immich-network
+
+volumes:
+  fizzy:
+
+networks:
+  immich-network:
+    external: true

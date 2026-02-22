@@ -1,0 +1,13 @@
+[Unit]
+Description=Mount external HDD for Immich
+Wants=dev-disk-by\x2duuid-9CEA4704EA46D9E2.device
+After=dev-disk-by\x2duuid-9CEA4704EA46D9E2.device
+
+[Mount]
+What=/dev/disk/by-uuid/9CEA4704EA46D9E2
+Where=/mnt/exthdd
+Type=ntfs-3g
+Options=defaults,uid=1000,gid=1000,umask=002
+
+[Install]
+WantedBy=multi-user.target

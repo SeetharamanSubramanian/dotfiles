@@ -1,0 +1,8 @@
+name: seetha-homelab
+
+include:
+  - immich/docker-compose.yml
+  - tailscale/docker-compose.yml
+  - fizzy/docker-compose.yml
+
+services: {}
