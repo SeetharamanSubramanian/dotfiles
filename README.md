@@ -65,6 +65,13 @@ done
 docker compose up -d
 ```
 
+## Shell
+
+```bash
+ln -sfn ~/Documents/Coding/dotfiles/zsh/.zshrc ~/.zshrc
+source ~/.zshrc
+```
+
 ## Directory Structure
 
 ```
@@ -84,7 +91,7 @@ docker compose up -d
 │   ├── .env.template
 │   └── .env               # Gitignored
 ├── systemd/               # Systemd service files
-├── fish/                  # Fish shell config
+├── zsh/                   # Zsh shell config
 ├── ghostty/               # Ghostty terminal config
 └── hypr/                  # Hyprland config
 ```
