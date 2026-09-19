@@ -10,7 +10,7 @@
           "format": "dddd HH:mm",
           "formatAlt": "d MMMM 'W'ww yyyy",
           "id": "omarchy.clock",
-          "verticalFormat": "HH\n\u2014\nmm"
+          "verticalFormat": "HH\n—\nmm"
         },
         {
           "id": "omarchy.keyboard-layout"
@@ -60,6 +60,12 @@
     "position": "top",
     "transparent": false
   },
+  "cloneSourceRestores": [
+    "seetha.background"
+  ],
+  "disabledPlugins": [
+    "omarchy.background"
+  ],
   "idle": {
     "lock": 1200,
     "screensaver": 900
@@ -69,11 +75,5 @@
       "id": "seetha.background"
     }
   ],
-  "version": 1,
-  "disabledPlugins": [
-    "omarchy.background"
-  ],
-  "cloneSourceRestores": [
-    "seetha.background"
-  ]
+  "version": 1
 }

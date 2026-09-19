@@ -1,3 +1,4 @@
+
 [Default Applications]
 image/png=imv.desktop
 image/jpeg=imv.desktop
@@ -46,3 +47,4 @@ application/xml=nvim.desktop
 text/xml=nvim.desktop
 x-scheme-handler/webcal=helium.desktop
 inode/directory=org.gnome.Nautilus.desktop
+x-scheme-handler/claude-cli=claude-code-url-handler.desktop
